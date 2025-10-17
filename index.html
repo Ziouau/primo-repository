@@ -1,75 +1,46 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pizzeria Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #ff6347;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        nav ul {
-            list-style-type: none;
-            background-color: #333;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-        }
-        nav li {
-            float: left;
-        }
-        nav li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        nav li a:hover {
-            background-color: #111;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzeria La Rustica</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Benvenuti nella nostra pizzeria</h1>
-        <p>Scopri i nostri menu: pizza, dolci e bevande.</p>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="menupizze.html">Menu Pizza</a></li>
-            <li><a href="#dolci">Menu Dolci</a></li>
-            <li><a href="#bevande">Menu Bevande</a></li>
-        </ul>
-    </nav>
-    <footer>
-        <p>&copy; 2025 Pizzeria Web</p>
-    </footer>
+  <header>
+    <h1>Pizzeria</h1>
+  </header>
+
+  <div class="scroll-stack-scroller">
+    <div class="scroll-stack-inner">
+
+      <div class="scroll-stack-card-wrapper">
+        <section class="scroll-stack-card pizza">
+          <h2>🍕 Le nostre Pizze</h2>
+          <a href="menupizze.html" class="btn">Scopri il menu pizza</a>
+        </section>
+      </div>
+
+      <div class="scroll-stack-card-wrapper">
+        <section class="scroll-stack-card dolci">
+          <h2>🍰 I nostri Dolci</h2>
+          <a href="menudolci.html" class="btn">Scopri il menu dolci</a>
+        </section>
+      </div>
+
+      <div class="scroll-stack-card-wrapper">
+        <section class="scroll-stack-card bevande">
+          <h2>🥤 Le nostre Bevande</h2>
+          <a href="menubevande.html" class="btn">Scopri il menu bevande</a>
+        </section>
+      </div>
+
+      <div class="scroll-stack-end"></div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025</p>
+  </footer>
 </body>
 </html>
